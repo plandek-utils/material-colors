@@ -84,7 +84,7 @@
     "prettier-plugin-organize-imports": "^3.0.0",
     "replace-in-file": "^6.3.2",
     "standard-version": "^9.5.0",
-    "strip-json-comments": "^4.0.0",
+    "strip-json-comments": "^5.0.0",
     "trash-cli": "^5.0.0",
     "ts-jest": "^28.0.2",
     "ts-loader": "^9.3.0",
