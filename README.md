@@ -75,7 +75,7 @@ See [The Typescript-Starter docs](https://github.com/bitjson/typescript-starter#
 For commits, you should use [`commitizen`](https://github.com/commitizen/cz-cli)
 
 ```sh
-yarn global add commitizen
+npm install -g commitizen
 
 #commit your changes:
 git cz
@@ -87,7 +87,7 @@ This project is tooled for [conventional changelog](https://github.com/conventio
 
 ```sh
 # bump package.json version, update CHANGELOG.md, git tag the release
-yarn run version
+npm run version
 ```
 
 You may find a tool like [**`wip`**](https://github.com/bitjson/wip) helpful for managing work in progress before you're ready to create a meaningful commit.
@@ -98,19 +98,19 @@ Once you are ready to create the first version, run the following (note that `re
 
 ```sh
 # Reset the repo to the latest commit and build everything
-yarn run reset && yarn run test && yarn run doc:html
+npm run reset && npm run test && npm run doc:html
 
 # Then version it with standard-version options. e.g.:
 # don't bump package.json version
-yarn run version -- --first-release
+npm run version -- --first-release
 
 # Other popular options include:
 
 # PGP sign it:
-# $ yarn run version -- --sign
+# $ npm run version -- --sign
 
 # alpha release:
-# $ yarn run version -- --prerelease alpha
+# $ npm run version -- --prerelease alpha
 ```
 
 And after that, remember to [publish the docs](#publish-the-docs).
@@ -122,30 +122,30 @@ And finally push the new tags to Github and publish the package to `npm`.
 git push --follow-tags origin master
 
 # Publish to NPM (allowing public access, required if the package name is namespaced like `@somewhere/some-lib`)
-yarn publish --access public
+npm publish --access public
 ```
 
 ### Publish the Docs
 
 ```sh
-yarn run doc:html && yarn run doc:publish
+npm run doc:html && npm run doc:publish
 ```
 
 This will generate the docs and publish them in Github pages.
 
 ### Generate a version
 
-There is a single yarn command for preparing a new release. See [One-step publish preparation script in TypeScript-Starter](https://github.com/bitjson/typescript-starter#one-step-publish-preparation-script)
+There is a single command for preparing a new release. See [One-step publish preparation script in TypeScript-Starter](https://github.com/bitjson/typescript-starter#one-step-publish-preparation-script)
 
 ```sh
 # Prepare a standard release
-yarn prepare-release
+npm run prepare-release
 
 # Push to git
 git push --follow-tags origin master
 
 # Publish to NPM (allowing public access, required if the package name is namespaced like `@somewhere/some-lib`)
-yarn publish --access public
+npm publish --access public
 ```
 
 </p>
