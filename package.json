@@ -1,6 +1,6 @@
 {
   "name": "@plandek-utils/material-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Eduardo Turiño <eturino@plandek.com>",
   "description": "Colors to use in Plandek projects, based on Material-UI",
   "main": "build/main/index.js",
